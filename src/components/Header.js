@@ -8,7 +8,7 @@ const Header = ({ title }) => {
   return (
     <header className="header">
       <h1>{title}</h1>
-      <Button color="black" textColor="white" text="Add" onClick={onClick} />
+      <Button color="green" textColor="white" text="Add" onClick={onClick} />
     </header>
   );
 };
@@ -20,5 +20,6 @@ Header.defaultProps = {
 Header.prototype = {
   title: PropTypes.string.isRequire,
 };
+
 
 export default Header;
